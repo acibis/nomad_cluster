@@ -10,11 +10,11 @@
 
 ```
 # generate an RSA key of size 2048 bits
-ssh-keygen -t rsa -b 2048 -f nomad.key -C
+ssh-keygen -t rsa -b 2048 -f nomad_key.pem -C
 ```
 3. Get your .pub key
 ```
-ssh-keygen -f /tmp/nomad.pem -y > nomad.pub
+ssh-keygen -f /tmp/nomad_key.pem -y > nomad_key.pub
 ```
 4. Open variables.tf file, fill in the blanks (ssh public key and yor IP address) and change whatever variables you feel like changing (p. ex. instance type to get more powerful cluster, or name to get a fancy vibe)
 
