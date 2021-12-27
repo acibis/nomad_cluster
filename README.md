@@ -53,7 +53,7 @@ don't worry, just run `terraform apply` once again.
 - The arguments and outputs could be put in one piece of code, in the manner where only one iteration of `terraform apply` is needed. Including the job definition.
 - Passwords could be encrypted or kept in the vault
 - Network configuration could be altered.
-- Database should be configured so the job can write and read properly.
+- Database should be configured so the job can write and read properly (probably the permissions problem)
 
 #### Used modules
  - terraform-aws-modules/vpc/aws
